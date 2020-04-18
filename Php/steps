@@ -1,0 +1,4 @@
+steps:
+	-	docker build -t phptest  .
+	-	docker run -p 8343:80 phptest
+	-	docker run -p  8348:80 -v ${pwd}/src:/var/www/html/  phptest

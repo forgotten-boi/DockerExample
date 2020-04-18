@@ -1,0 +1,3 @@
+docker build -t phpdock:v1 .
+docker run -p 8089:80 phpdock:v1
+docker run -p  8089:80 -v ${pwd}/src:/var/www/html/  phpdock:v1
